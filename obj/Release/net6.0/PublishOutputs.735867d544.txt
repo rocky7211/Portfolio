@@ -1,0 +1,7 @@
+C:\Users\jared\Documents\GitHub\Portfolio2.0\Portfolio 2.0\obj\Release\net6.0\PubTmp\Out\Portfolio 2.0.exe
+C:\Users\jared\Documents\GitHub\Portfolio2.0\Portfolio 2.0\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\jared\Documents\GitHub\Portfolio2.0\Portfolio 2.0\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\jared\Documents\GitHub\Portfolio2.0\Portfolio 2.0\obj\Release\net6.0\PubTmp\Out\Portfolio 2.0.dll
+C:\Users\jared\Documents\GitHub\Portfolio2.0\Portfolio 2.0\obj\Release\net6.0\PubTmp\Out\Portfolio 2.0.deps.json
+C:\Users\jared\Documents\GitHub\Portfolio2.0\Portfolio 2.0\obj\Release\net6.0\PubTmp\Out\Portfolio 2.0.runtimeconfig.json
+C:\Users\jared\Documents\GitHub\Portfolio2.0\Portfolio 2.0\obj\Release\net6.0\PubTmp\Out\Portfolio 2.0.pdb
