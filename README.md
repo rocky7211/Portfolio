@@ -1,6 +1,5 @@
 # Portfolio 2.0 Detailed Plan
-[Updated: 03/03/23] \
-
+[Updated: 03/03/23] 
 
 ## Update! (03/03/23)
 
