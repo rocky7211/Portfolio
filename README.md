@@ -12,15 +12,15 @@ Commit a7d7f15 replaced vscode dependancies and such .NET also.
 The commit also committed the new projects. There are a number of things to do for portfolio.
 
 Completed:
-- [] ReactDOM Routing has been completed, to enable multiple pages on the one app.
+- ReactDOM Routing has been completed, to enable multiple pages on the one app.
 
 To Do:
 
-- [] Create CSS Modules, to avoid reusing code.
-- [] Create HTML Modules and/or templates to avoiding reusing code.
-- [] Insert new code for the greeting, as seen in my-react-app.
-- [] Modify greeting code to ensure unique text referring to the titles on each page.
-- [] Add HTML and CSS.
+- Create CSS Modules, to avoid reusing code.
+- Create HTML Modules and/or templates to avoiding reusing code.
+- Insert new code for the greeting, as seen in my-react-app.
+- Modify greeting code to ensure unique text referring to the titles on each page.
+- Add HTML and CSS.
 
 More items to come later...
 
