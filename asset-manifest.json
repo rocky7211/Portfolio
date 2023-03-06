@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio-2.0/static/css/main.212d6241.css",
-    "main.js": "/Portfolio-2.0/static/js/main.124706fd.js",
-    "static/media/pet-adoption.png": "/Portfolio-2.0/static/media/pet-adoption.0424eb577f2f62a8d503.png",
-    "static/media/portfolio-1.0.png": "/Portfolio-2.0/static/media/portfolio-1.0.ec284f9b5ba584463fa9.png",
-    "static/media/Rlang.png": "/Portfolio-2.0/static/media/Rlang.16e8eaa6f7ed06e31a94.png",
-    "static/media/python.png": "/Portfolio-2.0/static/media/python.82efb64f8698a267f8bf.png",
-    "static/media/java.png": "/Portfolio-2.0/static/media/java.fdabd4e11f1235e4e8e0.png",
-    "static/media/react.png": "/Portfolio-2.0/static/media/react.0cf951a69d8e58f83f9d.png",
-    "static/media/html.png": "/Portfolio-2.0/static/media/html.2ba4fabc69a89a8f71e6.png",
-    "static/media/css.png": "/Portfolio-2.0/static/media/css.69a82c2d9e45c933a9cb.png",
-    "static/media/logo.svg": "/Portfolio-2.0/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Portfolio-2.0/index.html",
-    "main.212d6241.css.map": "/Portfolio-2.0/static/css/main.212d6241.css.map",
-    "main.124706fd.js.map": "/Portfolio-2.0/static/js/main.124706fd.js.map"
+    "main.css": "/Portfolio/static/css/main.212d6241.css",
+    "main.js": "/Portfolio/static/js/main.ef904fe5.js",
+    "static/media/pet-adoption.png": "/Portfolio/static/media/pet-adoption.0424eb577f2f62a8d503.png",
+    "static/media/portfolio-1.0.png": "/Portfolio/static/media/portfolio-1.0.ec284f9b5ba584463fa9.png",
+    "static/media/Rlang.png": "/Portfolio/static/media/Rlang.16e8eaa6f7ed06e31a94.png",
+    "static/media/python.png": "/Portfolio/static/media/python.82efb64f8698a267f8bf.png",
+    "static/media/java.png": "/Portfolio/static/media/java.fdabd4e11f1235e4e8e0.png",
+    "static/media/react.png": "/Portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/html.png": "/Portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/css.png": "/Portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/logo.svg": "/Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.212d6241.css.map": "/Portfolio/static/css/main.212d6241.css.map",
+    "main.ef904fe5.js.map": "/Portfolio/static/js/main.ef904fe5.js.map"
   },
   "entrypoints": [
     "static/css/main.212d6241.css",
-    "static/js/main.124706fd.js"
+    "static/js/main.ef904fe5.js"
   ]
 }
