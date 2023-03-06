@@ -1,23 +1,30 @@
 import React from "react";
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
-        <div name="home" className="w-full h-screen bg-[#0a192f] ">
+        <div name="home" className="w-full h-screen bg-[#192231] ">
+
             {/* Container */}
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-                <p className="text-pink-600">Hi, my name is</p>
+                <p className="text-[#46bcde] font-bold">Hi, my name is</p>
                 <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">Jared McDowall</h1>
-                <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">I'm a full-stack developer.</h2>
-                <p className="text-[#8892b0] py-4 max-w-[700px]">specialising in building (and occasionally designing)exceptional digital experiences.
-                    Currently, I'm focussed on responsive full-stack web applications.</p>
+                <h2 className="text-2xl sm:text-5xl font-bold text-[#8892b0]">Computer Science Major</h2>
+                <p className="text-[#8892b0] font-bold py-4 max-w-[700px]">Always on a mission to learn and develop technically and personally. 
+                Passionate about making a positive difference to the world through technology.</p>
                 <div>
-                    <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
-                        View Work 
+        
+                {/* Smooth Scroll */}
+                <Link to="work" smooth={true} duration={500}> 
+                    <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#46bcde] hover:border-[#46bcde]">
+                        View Work
                         <span className="group-hover:rotate-90 duration-300">
                             <HiArrowNarrowRight className="ml-3" />
                         </span>
                     </button>
+                </Link>
+                
                 </div>
             </div>
         </div>
