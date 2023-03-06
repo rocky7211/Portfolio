@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my new portfolio (2.0), built on ReactJS. Feel free to have a browse through the code, and the live website is linked also. 
+
+If you would like to fork or clone the repo, please follow the steps below to ensure it works properly. 
+
+This portfolio is still under development, so there are bound to be changes.
 
 ## Available Scripts
 
