@@ -1,50 +1,70 @@
-# Portfolio 2.0 Detailed Plan
-[Updated: 03/03/23] 
+# Getting Started with Create React App
 
-## Update! (03/03/23)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Removing .NET as a core technology for this project. ReactJS is sufficient to complete everything that is required.
-There are two React project folders included in the recent commit, my-react-app was the original and has useful React code to use later on.
-The main project that will eventually be deployed is portfolio, there are a number of things left to do on this project.
+## Available Scripts
 
-Commit a7d7f15 replaced vscode dependancies and such .NET also. 
-The commit also committed the new projects. There are a number of things to do for portfolio.
+In the project directory, you can run:
 
-Completed:
-- ReactDOM Routing has been completed, to enable multiple pages on the one app.
+### `yarn start`
 
-To Do:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- Create CSS Modules, to avoid reusing code.
-- Create HTML Modules and/or templates to avoiding reusing code.
-- Insert new code for the greeting, as seen in my-react-app.
-- Modify greeting code to ensure unique text referring to the titles on each page.
-- Add HTML and CSS.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-More items to come later...
+### `yarn test`
 
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**Objective:** The aim for this document is to outline a detailed plan for the design, construction and deployment of 
-Portfolio 2.0 website. It will set out requirement and ideas, alongside analysis on what is required to implement each 
-step. This document is the rule of law, everything in this document is to be consider like law and applied directly into
-the project in one way or another. This document is the MVP law book, everything we need to ensure the project reaches
-MVP as defined in another section. Once we have ticked the definition of done at the end, then only then can we work
-away from this document. It is designed to ensure we reach the definition of done and have something amazing to show 
-prospective employers. 
+### `yarn build`
 
-**Scope:** Design, Planning, Construction, Deployment ~~and Maintenance~~ of Portfolio 2.0 project. Overlooks the entire 
-process for building Project Portfolio 2.0 and is the law from start to the definition of done. Maintenance will not be
-covered in this document, due to the nature of the project. Once deployed, the website will not need further work.
-Only exception is adding new projects to the website, see the related section for more.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Design
-Designing of this project has taken place on different mediums, such as whiteboards and FreeForm App. These will be
-included in the project folder, not within this document. Refer to these designs for any visual UI work that is done on
-the project. Designs are allowed to change but must stick to the overall theme, feel, and expectations.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Plan
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-So far there is a detailed visual design, that envisions how the website should look as a minimal viable production (MVP).
-These will not be explored here in this document, however it is worth mentioning that any design decisions should be 
-referred to these initials designs. These are found at current on the FreeForm app on Apple devices.
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
