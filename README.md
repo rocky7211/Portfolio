@@ -8,6 +8,11 @@ This portfolio is still under development, so there are bound to be changes.
 
 If looking for production build, please se gh-pages branch.
 
+## Actions
+When pushing to main, there are actions that run through the build and deployment of the react app. This will build the app automatically and deploy it to the custom domain in CNAME. 
+
+Once the actions have completed successfully, the app will be deployed through to the custom domain with no need for manually builds. 
+
 ## Available Scripts
 
 In the project directory, you can run:
