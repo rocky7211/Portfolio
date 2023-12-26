@@ -12,12 +12,12 @@ const About = () => {
                     </div>
                 <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
                     <div className="sm:text-right text-4xl font-bold">
-                        <p>I'm Jared, nice to meet you.</p>
+                        <p>Kia ora, welcome to my portfolio.</p>
                     </div>
                     <div>
-                        <p> I am in my final year of BSc Computer Science and Statistics at The University of Auckland.
+                        <p> I am a graduand of the University of Auckland, with a Bachelor of Science in Computer Science.
                             Currently, my interests are lying with software development and security, with a bit of data science on the side.
-                            I'm committed to learning as much as I can and developing high quality, functional software.
+                            I'm always looking to learn new things, and I'm currently working on a few projects to expand my skillset.
                         </p>
                     </div>
                 </div>
