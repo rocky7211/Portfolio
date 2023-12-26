@@ -4,11 +4,11 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
-        <div name="home" className="w-full h-screen bg-[#192231] ">
+        <div name="home" className="w-full h-screen bg-[#08314A] ">
 
             {/* Container */}
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-                <p className="text-[#46bcde] font-bold">Hi, my name is</p>
+                <p className="text-[#FABF00] font-bold">Hi, my name is</p>
                 <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">Jared McDowall</h1>
                 <h2 className="text-2xl sm:text-5xl font-bold text-[#8892b0]">Computer Science Major</h2>
                 <p className="text-[#8892b0] font-bold py-4 max-w-[700px]">Always on a mission to learn and develop technically and personally. 
