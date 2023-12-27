@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08314A] text-gray-300">
         <div>
-            <img src={Logo} alt="Logo" style={{width: '90px', paddingTop: '50%'}} /> { }
+            <img src={Logo} alt="Logo" style={{width: '80px'}} /> { }
         </div>
 
         { /* Menu */ }
