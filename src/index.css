@@ -23,8 +23,7 @@
 
 .content-div:hover {
   background-image: linear-gradient(
-    to bottom,
-    #FABF00,
-    hsla(46, 100%, 49%, 0.8)
+    to bottom right,
+    #FD00E3,#0C7DCB,#03F8FF
   )!important;
 }
