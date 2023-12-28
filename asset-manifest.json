@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a6a9f4b.css",
-    "main.js": "/static/js/main.ab4f49fc.js",
+    "main.css": "/static/css/main.8c05d978.css",
+    "main.js": "/static/js/main.2c5d54fb.js",
     "static/media/pet-adoption.png": "/static/media/pet-adoption.0424eb577f2f62a8d503.png",
     "static/media/portfolio-1.0.png": "/static/media/portfolio-1.0.ec284f9b5ba584463fa9.png",
     "static/media/Rlang.png": "/static/media/Rlang.16e8eaa6f7ed06e31a94.png",
@@ -12,11 +12,11 @@
     "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
     "index.html": "/index.html",
-    "main.8a6a9f4b.css.map": "/static/css/main.8a6a9f4b.css.map",
-    "main.ab4f49fc.js.map": "/static/js/main.ab4f49fc.js.map"
+    "main.8c05d978.css.map": "/static/css/main.8c05d978.css.map",
+    "main.2c5d54fb.js.map": "/static/js/main.2c5d54fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a6a9f4b.css",
-    "static/js/main.ab4f49fc.js"
+    "static/css/main.8c05d978.css",
+    "static/js/main.2c5d54fb.js"
   ]
 }
