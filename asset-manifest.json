@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.8a6a9f4b.css",
-    "main.js": "/static/js/main.f8a04802.js",
+    "main.js": "/static/js/main.ab4f49fc.js",
     "static/media/pet-adoption.png": "/static/media/pet-adoption.0424eb577f2f62a8d503.png",
     "static/media/portfolio-1.0.png": "/static/media/portfolio-1.0.ec284f9b5ba584463fa9.png",
     "static/media/Rlang.png": "/static/media/Rlang.16e8eaa6f7ed06e31a94.png",
     "static/media/python.png": "/static/media/python.82efb64f8698a267f8bf.png",
     "static/media/java.png": "/static/media/java.fdabd4e11f1235e4e8e0.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
-    "static/media/jm-logo.svg": "/static/media/jm-logo.1d4d12ae12c93414b82e59b175cc70f7.svg",
+    "static/media/jm-logo.svg": "/static/media/jm-logo.e4cc1d24845ad167860251f74def4daf.svg",
     "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
     "index.html": "/index.html",
     "main.8a6a9f4b.css.map": "/static/css/main.8a6a9f4b.css.map",
-    "main.f8a04802.js.map": "/static/js/main.f8a04802.js.map"
+    "main.ab4f49fc.js.map": "/static/js/main.ab4f49fc.js.map"
   },
   "entrypoints": [
     "static/css/main.8a6a9f4b.css",
-    "static/js/main.f8a04802.js"
+    "static/js/main.ab4f49fc.js"
   ]
 }
