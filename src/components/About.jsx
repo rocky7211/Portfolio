@@ -15,9 +15,9 @@ const About = () => {
                         <p>Welcome to my portfolio.</p>
                     </div>
                     <div>
-                        <p> I am a graduate of the University of Auckland, with a Bachelor of Science majoring in Computer Science. 
-                            My passions lie in all things techonology specifically development and security.
-                            I'm always looking to learn new things, and I'm currently working on a few projects to expand my skillset.
+                        <p> Graduate of the University of Auckland with a Bachelor's degree in Science, majoring in Computer Science.
+                            I am passionate about all things technology, with a focus on development and security.
+                            Currently engaged in diverse projects to broaden my expertise while continually exploring and developing new skills.
                         </p>
                     </div>
                 </div>
