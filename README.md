@@ -1,81 +1,26 @@
-# Portfolio (DEV)
+# Portfolio 2.0 (Development Version)
 
-This is my new portfolio (2.0), built on ReactJS and Tailwinds CSS. Feel free to have a browse through the code, and the live website is linked also. 
+Welcome to the development version of my Portfolio 2.0, a dynamic showcase built with ReactJS and styled using Tailwind CSS. This portfolio is designed to present my projects and skills in a clean, modern interface. Explore the code or visit the live site to see my work in action.
 
-If you would like to fork or clone the repo, please follow the steps below to ensure it works properly. 
+**Live Website:** [Insert Live Website Link Here]
 
-This portfolio is still under development, so there are bound to be changes.
+## Getting Started
 
-If looking for production build, please se gh-pages branch.
+To get a local copy up and running, follow these simple steps:
 
-## Actions
-When pushing to main, there are actions that run through the build and deployment of the react app. This will build the app automatically and deploy it to the custom domain in CNAME. 
+1. **Fork or Clone the Repository:**
+   - Fork the repository to your account or clone it directly using `git clone [repository-link]`.
 
-Once the actions have completed successfully, the app will be deployed through to the custom domain with no need for manually builds. 
+2. **Installation:**
+   - Navigate to the project directory and run `yarn install` to install the necessary dependencies.
 
-## Available Scripts
+3. **Running the Application:**
+   - In the project directory, execute `yarn start` to launch the app in development mode. Access it via [http://localhost:3000](http://localhost:3000).
 
-In the project directory, you can run:
+## Development Status
 
-### `yarn start`
+This portfolio is actively being developed, which means regular updates and new features. For the latest stable version, check out the `gh-pages` branch.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Automated Deployment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project is configured with GitHub Actions for continuous integration and deployment. Commits pushed to the main branch trigger a build process and deploy the application to a specified custom domain, ensuring the live site is always up-to-date.
