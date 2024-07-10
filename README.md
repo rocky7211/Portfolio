@@ -2,7 +2,7 @@
 
 Welcome to the development version of my Portfolio 2.0, a dynamic showcase built with ReactJS and styled using Tailwind CSS. This portfolio is designed to present my projects and skills in a clean, modern interface. Explore the code or visit the live site to see my work in action.
 
-**Live Website:** [Insert Live Website Link Here]
+[**Live Website Link**](https://jaredmcdowall.me/)
 
 ## Getting Started
 
