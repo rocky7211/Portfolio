@@ -1,8 +1,54 @@
 import React from "react";
-import portfolio from "../assets/portfolio-1.0.png";
-import adoption from "../assets/pet-adoption.png";
 
 const Work = () => {
+    const [input, setInput] = React.useState("");
+    const [selectedMethod, setSelectedMethod] = React.useState('');
+    const [response, setResponse] = React.useState("");
+
+    const handleInputChange = (e) => { setInput(e.target.value); };
+
+    const handleMethodChange = (e) => { setSelectedMethod(e.target.value); };
+
+    const handleButtonClick = () => { 
+        switch (selectedMethod) {
+            case "get_all_skills":
+                get_all_skills();
+                break;
+            case "get_skill":
+                get_skill();
+                break;
+            default:
+                console.error("Invalid method selected");
+        }
+    };
+
+    const get_all_skills = async () => {
+        try {
+            const res = await fetch("https://python-skills.onrender.com/api/skills/get_all_skills", {
+                method: "GET",
+                headers: { "Content-Type": "application/json" },
+            });
+            const data = await res.json();
+            setResponse(data.response);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
+    const get_skill = async () => {
+        try {
+            const res = await fetch("https://python-skills.onrender.com/api/skills/get_skill/", {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ input })
+            });
+            const data = await res.json();
+            setResponse(data.response);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
     return (
         <div name='work' className="w-full md:h-screen text-white bg-[#08314A]">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
@@ -13,47 +59,42 @@ const Work = () => {
                 </div>
 
                 {/* Container */}
-                <div className="grid sm:grid-cols-2 md:grid-col-3 gap-4">
+                <div className="grid sm:grid-cols-1 md:grid-col-3 gap-4">
 
                     {/* Grid Item */}
-                    <div style={{backgroundImage: `url(${portfolio})`}} 
-                    className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-
-                        {/* Hover Effects */}
-                        <div className="opacity-0 group-hover:opacity-100">
-                            <span className="text-xl font-bold text-white tracking-wider">
-                            Static HTML, CSS, <br/>and JavaScript Website
-                            </span>
-
-                            <div className="pt-8 text-center"> 
-                                <a className="mx-2" href="https://rocky7211.github.io/Portfolio1.0/">
-                                    <button className="text-center rounded-lg px-4 py-3 my-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
-                                </a>
-                                <a className="mx-2" href="https://github.com/rocky7211/Portfolio1.0">
-                                    <button className="text-center rounded-lg px-4 py-3 my-2 bg-white text-gray-700 font-bold text-lg">Code</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Grid Item */}
-                    <div style={{backgroundImage: `url(${adoption})`}} 
-                    className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-
-                        {/* Hover Effects */}
-                        <div className="opacity-0 group-hover:opacity-100">
-                            <span className="text-2xl font-bold text-white tracking-wider">
-                                Static HTML and CSS Website
-                            </span>
-
-                            <div className="pt-8 text-center"> 
-                                <a className="mx-2" href="https://rocky7211.github.io/Pet-Adoption/">
-                                    <button className="text-center rounded-lg px-4 py-3 my-2 bg-white text-gray-700 font-bold text-lg">Demo</button>
-                                </a>
-                                <a className="mx-2" href="https://github.com/rocky7211/Pet-Adoption">
-                                    <button className="text-center rounded-lg px-4 py-3 my-2 bg-white text-gray-700 font-bold text-lg">Code</button>
-                                </a>
-                            </div>
+                    <div 
+                    className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+                     style={{ background: 'linear-gradient(to bottom right, #FD00E3, #0C7DCB, #03F8FF)' }}>
+                        <div className="mt-8">
+                            <h2 className="text-2xl font-bold">Developer Skills</h2>
+                                <div className="flex flex-col md:flex-row gap-4">
+                                    <select
+                                        className="p-2 border border-[#FD00E3] rounded-md w-full md:w-1/2 text-black"
+                                        onChange={handleMethodChange}
+                                        value={selectedMethod}
+                                    >
+                                        <option value="">Select Method</option>
+                                        <option value="get_all_skills">Get All Skills</option>
+                                        <option value="get_skill">Get Skill</option>
+                                    </select>
+                                    <input
+                                        type="text"
+                                        placeholder="Enter skill"
+                                        className="p-2 border border-[#FD00E3] rounded-md w-full md:w-1/2 text-black"
+                                        onChange={handleInputChange}
+                                    />
+                                    <button
+                                        className="p-2 bg-[#FD00E3] rounded-md md:w-1/5"
+                                        onClick={handleButtonClick}
+                                    >
+                                        Submit
+                                    </button>
+                                </div>
+                                {response && (
+                                    <div className="mt-4 p-4 bg-white text-black rounded-md">
+                                        <pre>{JSON.stringify(response, null, 2)}</pre>
+                                    </div>
+                                )}
                         </div>
                     </div>
                 </div>
