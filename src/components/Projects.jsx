@@ -29,7 +29,8 @@ const Projects = () => {
                 headers: { "Content-Type": "application/json" },
             });
             const data = await res.json();
-            setResponse(data.response);
+            console.log(data);
+            setResponse(data);
         } catch (err) {
             console.error(err);
         }
@@ -50,7 +51,7 @@ const Projects = () => {
     };
 
     return (
-        <div name='projects' className="w-full md:h-screen text-white bg-[#08314A]">
+        <div name='projects' className="w-full text-white bg-[#08314A]">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
                     <p className="text-4xl font-bold inline border-b-4 text-white border-[#FD00E3]">Projects</p>
@@ -62,15 +63,14 @@ const Projects = () => {
                 </div>
 
                 {/* Container */}
-                <div className="grid sm:grid-cols-1 md:grid-col-3 gap-4">
+                <div className="grid sm:grid-cols-1 md:grid-col-3 gap-4 ">
 
                     {/* Grid Item */}
                     <div 
-                    className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+                    className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-center items-center"
                      style={{ background: 'linear-gradient(to bottom right, #FD00E3, #0C7DCB, #03F8FF)' }}>
-                        <h2 className="text-2xl font-bold">Developer Skills</h2>
-                        <div className="mt-8">
-                            
+                        <div className="my-8">
+                                <h2 className="text-2xl font-bold">Developer Skills</h2>
                                 <div className="flex flex-col md:flex-row gap-4">
                                     <select
                                         className="p-2 border border-[#FD00E3] rounded-md w-full md:w-1/2 text-black"
@@ -95,10 +95,10 @@ const Projects = () => {
                                     </button>
                                 </div>
                                 {response && (
-                                    <div className="mt-4 p-4 bg-white text-black rounded-md">
-                                        <pre>{JSON.stringify(response, null, 2)}</pre>
-                                    </div>
-                                )}
+                        <div className="mt-4 p-4 text-white rounded-md w-full">
+                            <pre>{JSON.stringify(response, null, 2)}</pre>
+                        </div>
+                    )}
                         </div>
                     </div>
                 </div>
