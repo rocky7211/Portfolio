@@ -1,6 +1,6 @@
 import React from "react";
 
-const Work = () => {
+const Projects = () => {
     const [input, setInput] = React.useState("");
     const [selectedMethod, setSelectedMethod] = React.useState('');
     const [response, setResponse] = React.useState("");
@@ -50,12 +50,15 @@ const Work = () => {
     };
 
     return (
-        <div name='work' className="w-full md:h-screen text-white bg-[#08314A]">
+        <div name='projects' className="w-full md:h-screen text-white bg-[#08314A]">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
-                    <p className="text-4xl font-bold inline border-b-4 text-white border-[#FD00E3]">Work</p>
-                    <p className="py-6">Here is a small collection of some of my recent work.
-                     I am constantly working on new projects, where I will update this section accordingly.</p>
+                    <p className="text-4xl font-bold inline border-b-4 text-white border-[#FD00E3]">Projects</p>
+                    <p className="py-6">I love personal projects! Over the years, I have developed a few different Projects
+                        and continue to develop and refine my skills. Below I have included my Developer Skills API, which I started
+                        as I was getting overwhelmed with all the different skills they employers were looking for. Check it out below!
+                        If you would like to see more, please visit my GitHub page.
+                    </p>
                 </div>
 
                 {/* Container */}
@@ -103,4 +106,4 @@ const Work = () => {
     );
 };
 
-export default Work;
+export default Projects;
