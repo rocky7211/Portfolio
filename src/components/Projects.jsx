@@ -68,8 +68,9 @@ const Projects = () => {
                     <div 
                     className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
                      style={{ background: 'linear-gradient(to bottom right, #FD00E3, #0C7DCB, #03F8FF)' }}>
+                        <h2 className="text-2xl font-bold">Developer Skills</h2>
                         <div className="mt-8">
-                            <h2 className="text-2xl font-bold">Developer Skills</h2>
+                            
                                 <div className="flex flex-col md:flex-row gap-4">
                                     <select
                                         className="p-2 border border-[#FD00E3] rounded-md w-full md:w-1/2 text-black"
