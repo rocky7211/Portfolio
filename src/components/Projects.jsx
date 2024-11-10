@@ -1,6 +1,8 @@
 import React from "react";
 
 const Projects = () => {
+
+    // move API implementation to seperate module later
     const [input, setInput] = React.useState("");
     const [selectedMethod, setSelectedMethod] = React.useState('');
     const [response, setResponse] = React.useState("");
@@ -16,6 +18,9 @@ const Projects = () => {
                 break;
             case "get_skill":
                 get_skill();
+                break;
+            case "add_skill":
+                add_skill();
                 break;
             default:
                 console.error("Invalid method selected");
@@ -39,7 +44,7 @@ const Projects = () => {
     const get_skill = async () => {
         try {
             const res = await fetch("https://python-skills.onrender.com/api/skills/get_skill/", {
-                method: "PUT",
+                method: "GET",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ input })
             });
@@ -50,10 +55,24 @@ const Projects = () => {
         }
     };
 
+    const add_skill = async () => {
+        try {
+            const res = await fetch("https://python-skills.onrender.com/api/skills/add_skill/", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ input })
+            });
+            const data = await res.json();
+            setResponse(data.response);
+        } catch (err) {
+            console.error(err);
+        }
+    }
+
     return (
         <div name='projects' className="w-full text-white bg-[#08314A]">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-                <div className="pb-8">
+                <div className="pb-8 pt-20">
                     <p className="text-4xl font-bold inline border-b-4 text-white border-[#FD00E3]">Projects</p>
                     <p className="py-6">I love personal projects! Over the years, I have developed a few different Projects
                         and continue to develop and refine my skills. Below I have included my Developer Skills API, which I started
@@ -80,6 +99,7 @@ const Projects = () => {
                                         <option value="">Select Method</option>
                                         <option value="get_all_skills">Get All Skills</option>
                                         <option value="get_skill">Get Skill</option>
+                                        <option value="add_skill">Add Skill</option>
                                     </select>
                                     <input
                                         type="text"
