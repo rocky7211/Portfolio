@@ -22,6 +22,12 @@ const Projects = () => {
             case "add_skill":
                 add_skill();
                 break;
+            case "decrement_skill":
+                decrement_skill();
+                break;
+            case "remove_skill":
+                remove_skill();
+                break;
             default:
                 console.error("Invalid method selected");
         }
@@ -43,10 +49,10 @@ const Projects = () => {
 
     const get_skill = async () => {
         try {
-            const res = await fetch("https://python-skills.onrender.com/api/skills/get_skill/", {
+            const res = await fetch("https://python-skills.onrender.com/api/skills/get_skill", {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ input })
+                body: JSON.stringify({ skill_name: input })
             });
             const data = await res.json();
             setResponse(data.response);
@@ -57,10 +63,38 @@ const Projects = () => {
 
     const add_skill = async () => {
         try {
-            const res = await fetch("https://python-skills.onrender.com/api/skills/add_skill/", {
+            const res = await fetch("https://python-skills.onrender.com/api/skills/add_skill", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ input })
+                body: JSON.stringify({ skill_name: input })
+            });
+            const data = await res.json();
+            setResponse(data.response);
+        } catch (err) {
+            console.error(err);
+        }
+    }
+
+    const decrement_skill = async () => {
+        try {
+            const res = await fetch("https://python-skills.onrender.com/api/skills/decrement_skill", {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ skill_name: input })
+            });
+            const data = await res.json();
+            setResponse(data.response);
+        } catch (err) {
+            console.error(err);
+        }
+    }
+
+    const remove_skill = async () => {
+        try {
+            const res = await fetch("https://python-skills.onrender.com/api/skills/remove_skill", {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ skill_name: input })
             });
             const data = await res.json();
             setResponse(data.response);
@@ -100,6 +134,8 @@ const Projects = () => {
                                         <option value="get_all_skills">Get All Skills</option>
                                         <option value="get_skill">Get Skill</option>
                                         <option value="add_skill">Add Skill</option>
+                                        <option value="decrement_skill">Decrement Skill</option>
+                                        <option value="remove_skill">Remove Skill</option>
                                     </select>
                                     <input
                                         type="text"
