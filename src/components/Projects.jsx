@@ -33,6 +33,12 @@ const Projects = () => {
         }
     };
 
+    const handleResetButtonClick = () => {
+        setInput("");
+        setSelectedMethod("");
+        setResponse("");
+    };
+
     const get_all_skills = async () => {
         try {
             const res = await fetch("https://python-skills.onrender.com/api/skills/get_all_skills", {
@@ -148,6 +154,12 @@ const Projects = () => {
                                         onClick={handleButtonClick}
                                     >
                                         Submit
+                                    </button>
+                                    <button
+                                        className="p-2 bg-[#FD00E3] rounded-md md:w-1/5"
+                                        onClick={handleResetButtonClick}
+                                    >
+                                        Reset
                                     </button>
                                 </div>
                                 {response && (
