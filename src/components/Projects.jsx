@@ -11,6 +11,8 @@ const Projects = () => {
 
     const handleMethodChange = (e) => { setSelectedMethod(e.target.value); };
 
+    const sortedResponse = Array.isArray(response) ? response.sort((a, b) => a.count - b.count) : response;
+
     const handleButtonClick = () => { 
         switch (selectedMethod) {
             case "get_all_skills":
@@ -46,7 +48,6 @@ const Projects = () => {
                 headers: { "Content-Type": "application/json" },
             });
             const data = await res.json();
-            console.log(data);
             setResponse(data);
         } catch (err) {
             console.error(err);
@@ -163,8 +164,16 @@ const Projects = () => {
                                     </button>
                                 </div>
                                 {response && (
-                        <div className="mt-4 p-4 text-white rounded-md w-full">
-                            <pre>{JSON.stringify(response, null, 2)}</pre>
+                                    <div className="mt-4 p-4 text-white rounded-md w-full">
+                                    {Array.isArray(sortedResponse) ? (
+                                        sortedResponse.map((skill, index) => (
+                                            <div key={index}>
+                                                <p><b>Skill: </b>{skill.name}. <b>Count: </b>{skill.count}</p>
+                                            </div>
+                                        ))
+                                    ) : (
+                                        <pre>{JSON.stringify(response, null, 2)}</pre>
+                                    )}
                         </div>
                     )}
                         </div>
