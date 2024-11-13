@@ -1,11 +1,30 @@
-import React, { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import React, { useEffect, useState } from "react";
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaArrowUp } from 'react-icons/fa';
 import Logo from '../assets/jm-logo.svg';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+    const [showArrow, setShowArrow] = useState(false);
+
     const handleClick = () => setNav(!nav);
+
+    const handleScroll = () => {
+        if (window.scrollY >= 200) {
+            setShowArrow(true);
+        } else {
+            setShowArrow(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll); }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08314A] text-white">
         <div>
@@ -64,9 +83,14 @@ const Navbar = () => {
                             GitHub <FaGithub size={30}/>
                         </a>
                     </li>
-                    {/* #16 */}
                 </ul>
             </div>
+            { /* Scroll to top */ }
+            {showArrow && (
+                <div onClick={scrollToTop} className="fixed bottom-4 right-4 bg-[#08314A] p-2 rounded-full cursor-pointer">
+                    <FaArrowUp className="text-white" size={30}/>
+                </div>
+            )}
         </div>
     );
 };
