@@ -9,7 +9,7 @@ import python from "../assets/python.png";
 
 const Skills = () => {
     return (
-        <div name="skills" className="w-full h-screen bg-[#08314A] text-white">
+        <div name="skills" className="w-full min-h-screen bg-[#08314A] text-white pt-20">
             {/* Container */}
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div>

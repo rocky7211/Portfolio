@@ -6,6 +6,7 @@ const Projects = () => {
     const [input, setInput] = React.useState("");
     const [selectedMethod, setSelectedMethod] = React.useState('');
     const [response, setResponse] = React.useState("");
+    const [loading, setLoading] = React.useState(false);
 
     const handleInputChange = (e) => { setInput(e.target.value); };
 
@@ -13,26 +14,20 @@ const Projects = () => {
 
     const sortedResponse = Array.isArray(response) ? response.sort((a, b) => a.count - b.count) : response;
 
-    const handleButtonClick = () => { 
-        switch (selectedMethod) {
-            case "get_all_skills":
-                get_all_skills();
-                break;
-            case "get_skill":
-                get_skill();
-                break;
-            case "add_skill":
-                add_skill();
-                break;
-            case "decrement_skill":
-                decrement_skill();
-                break;
-            case "remove_skill":
-                remove_skill();
-                break;
-            default:
-                console.error("Invalid method selected");
+    const handleButtonClick = async () => {
+        setLoading(true);
+        if (selectedMethod === 'get_all_skills') {
+            await get_all_skills();
+        } else if (selectedMethod === 'get_skill') {
+            await get_skill();
+        } else if (selectedMethod === 'add_skill') {
+            await add_skill();
+        } else if (selectedMethod === 'decrement_skill') {
+            await decrement_skill();
+        } else if (selectedMethod === 'remove_skill') {
+            await remove_skill();
         }
+        setLoading(false);
     };
 
     const handleResetButtonClick = () => {
@@ -52,6 +47,7 @@ const Projects = () => {
         } catch (err) {
             console.error(err);
         }
+
     };
 
     const get_skill = async () => {
@@ -111,7 +107,7 @@ const Projects = () => {
     }
 
     return (
-        <div name='projects' className="w-full text-white bg-[#08314A]">
+        <div name='projects' className="w-full min-h-screen text-white bg-[#08314A]">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div className="pb-8 pt-20">
                     <p className="text-4xl font-bold inline border-b-4 text-white border-[#FD00E3]">Projects</p>
@@ -163,19 +159,23 @@ const Projects = () => {
                                         Reset
                                     </button>
                                 </div>
+                                {loading && (
+                                    <div className="mt-4 p-4 text-white rounded-md w-full">
+                                        <div className="loader"></div>
+                                    </div>
+                                )}
                                 {response && (
                                     <div className="mt-4 p-4 text-white rounded-md w-full">
-                                    {Array.isArray(sortedResponse) ? (
-                                        sortedResponse.map((skill, index) => (
-                                            <div key={index}>
-                                                <p><b>Skill: </b>{skill.name}. <b>Count: </b>{skill.count}</p>
-                                            </div>
-                                        ))
-                                    ) : (
-                                        <pre>{JSON.stringify(response, null, 2)}</pre>
-                                    )}
-                        </div>
-                    )}
+                                        {Array.isArray(sortedResponse) ? (
+                                            sortedResponse.map((skill, index) => (
+                                                <div key={index}>
+                                                    <p><b>Skill: </b>{skill.name}. <b>Count: </b>{skill.count}</p>
+                                                </div>
+                                            ))
+                                            ) : (<pre>{JSON.stringify(response, null, 2)}</pre>)
+                                        }
+                                    </div>
+                                )}
                         </div>
                     </div>
                 </div>
