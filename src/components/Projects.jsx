@@ -38,7 +38,7 @@ const Projects = () => {
 
     const get_all_skills = async () => {
         try {
-            const res = await fetch("https://api.jaredmcdowall.me/api/skills/get_all_skills", {
+            const res = await fetch("https://api.jaredmcdowall.me/skills/get_all_skills", {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
             });
@@ -52,7 +52,7 @@ const Projects = () => {
 
     const get_skill = async () => {
         try {
-            const res = await fetch("https://api.jaredmcdowall.me/api/skills/get_skill", {
+            const res = await fetch("https://api.jaredmcdowall.me/skills/get_skill", {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ skill_name: input })
@@ -66,7 +66,7 @@ const Projects = () => {
 
     const add_skill = async () => {
         try {
-            const res = await fetch("https://api.jaredmcdowall.me/api/skills/add_skill", {
+            const res = await fetch("https://api.jaredmcdowall.me/skills/add_skill", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ skill_name: input })
@@ -80,7 +80,7 @@ const Projects = () => {
 
     const decrement_skill = async () => {
         try {
-            const res = await fetch("https://api.jaredmcdowall.me/api/skills/decrement_skill", {
+            const res = await fetch("https://api.jaredmcdowall.me/skills/decrement_skill", {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ skill_name: input })
@@ -94,7 +94,7 @@ const Projects = () => {
 
     const remove_skill = async () => {
         try {
-            const res = await fetch("https://api.jaredmcdowall.me/api/skills/remove_skill", {
+            const res = await fetch("https://api.jaredmcdowall.me/skills/remove_skill", {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ skill_name: input })
