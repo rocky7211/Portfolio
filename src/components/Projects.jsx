@@ -52,13 +52,12 @@ const Projects = () => {
 
     const get_skill = async () => {
         try {
-            const res = await fetch("https://api.jaredmcdowall.me/skills/get_skill", {
+            const res = await fetch(`http://127.0.0.1:5000/skills/get_skill?skill_name=${encodeURIComponent(input)}`, {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ skill_name: input })
             });
             const data = await res.json();
-            setResponse(data.response);
+            setResponse(data);
         } catch (err) {
             console.error(err);
         }
