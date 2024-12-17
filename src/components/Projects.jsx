@@ -52,7 +52,7 @@ const Projects = () => {
 
     const get_skill = async () => {
         try {
-            const res = await fetch(`http://127.0.0.1:5000/skills/get_skill?skill_name=${encodeURIComponent(input)}`, {
+            const res = await fetch(`https://api.jaredmcdowall.me/skills/get_skill?skill_name=${encodeURIComponent(input)}`, {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
             });
