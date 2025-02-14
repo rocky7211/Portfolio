@@ -110,10 +110,10 @@ const Projects = () => {
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div className="pb-8 pt-20">
                     <p className="text-4xl font-bold inline border-b-4 text-white border-[#FD00E3]">Projects</p>
-                    <p className="py-6">I love personal projects! Over the years, I have developed a few different Projects
-                        and continue to develop and refine my skills. Below I have included my Developer Skills API, which I started
-                        as I was getting overwhelmed with all the different skills they employers were looking for. Check it out below!
-                        If you would like to see more, please visit my GitHub page.
+                    <p className="py-6">I enjoy developing new skills and refining current ones through personal projects.
+                        Over the years, I have developed a few different projects and continue challenging myself.
+                        Below, I have included my Developer Skills API, built with Python using the Flask library. I started this as a way to keep track of all the
+                        different skills employers sought. Check it out below! If you would like to see more, please visit my GitHub page.
                     </p>
                 </div>
 
