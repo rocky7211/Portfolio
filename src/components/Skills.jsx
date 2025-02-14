@@ -17,6 +17,18 @@ const Skills = () => {
                     <p className="py-4">These are the technologies that I have worked the most with.</p>
                 </div>
                 <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
+                <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                        <img className="w-20 mx-auto" src={python} alt="Python icon" />
+                        <p className="my-4">PYTHON</p>
+                    </div>
+                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                        <img className="w-20 mx-auto" src={java} alt="Java icon" />
+                        <p className="my-4">JAVA</p>
+                    </div>
+                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                        <img className="w-20 mx-auto" src={react} alt="React icon" />
+                        <p className="my-4">REACT</p>
+                    </div>
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={html} alt="HTML icon" />
                         <p className="my-4">HTML</p>
@@ -28,18 +40,6 @@ const Skills = () => {
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className="w-20 mx-auto" src={rlang} alt="R icon" />
                         <p className="my-4">R</p>
-                    </div>
-                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={react} alt="React icon" />
-                        <p className="my-4">REACT</p>
-                    </div>
-                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={python} alt="Python icon" />
-                        <p className="my-4">PYTHON</p>
-                    </div>
-                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-                        <img className="w-20 mx-auto" src={java} alt="Java icon" />
-                        <p className="my-4">JAVA</p>
                     </div>
                 </div>
             </div>
